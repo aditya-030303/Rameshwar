@@ -1,156 +1,69 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
-
 header {
-  background-color: #1c1f4c;
-  color: white;
-  padding: 1rem 0;
-  position: relative;
+  background: #4a90e2;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
 
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+nav {
+  background: #333;
 }
 
-.logo {
-  font-size: 1.5rem;
-}
-
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-  position: absolute;
-
-  right: 1rem;
-  
-}
-
-.nav-links {
+nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.nav-links a {
-  color: white;
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1em 2em;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.hero {
-  background-color: #e4ecf7;
-  padding: 3rem 0;
-  text-align: center;
+nav a:hover {
+  background: #555;
 }
 
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
 }
 
-.hero p {
-  font-size: 1.125rem;
-  color: #444;
+section {
+  margin-bottom: 2em;
 }
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-.column {
-  flex: 1;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.image-section {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.image-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
 
 footer {
-  background-color: #1c1f4c;
-  color: white;
+  background: #4a90e2;
+  color: #fff;
   text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+  padding: 1em 0;
+  margin-top: 2em;
 }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
+@media (max-width: 600px) {
+  nav ul {
     flex-direction: column;
-    background-color: #1c1f4c;
-    padding: 1rem;
-    position: absolute;
-    top: 4rem;
-    right: 1rem;
-    border-radius: 8px;
+    align-items: stretch;
   }
-
-  nav.show .nav-links {
-    display: flex;
-  }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .column {
-    padding: 1rem;
-  }
-
-  .logo {
-    font-size: 1.25rem;
+  nav a {
+    padding: 1em;
+    text-align: center;
   }
 }
-
